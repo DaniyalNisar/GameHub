@@ -55,6 +55,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.Datelbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrdersGv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemsGV)).BeginInit();
@@ -65,11 +66,11 @@
             this.QtyTb.BackColor = System.Drawing.SystemColors.Desktop;
             this.QtyTb.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QtyTb.ForeColor = System.Drawing.SystemColors.Window;
-            this.QtyTb.Location = new System.Drawing.Point(696, 256);
-            this.QtyTb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.QtyTb.Location = new System.Drawing.Point(438, 229);
+            this.QtyTb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.QtyTb.Name = "QtyTb";
             this.QtyTb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.QtyTb.Size = new System.Drawing.Size(189, 27);
+            this.QtyTb.Size = new System.Drawing.Size(143, 23);
             this.QtyTb.TabIndex = 12;
             this.QtyTb.Text = "Quantity";
             // 
@@ -79,9 +80,10 @@
             this.label5.BackColor = System.Drawing.SystemColors.Desktop;
             this.label5.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label5.Location = new System.Drawing.Point(1147, -33);
+            this.label5.Location = new System.Drawing.Point(860, -27);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(27, 29);
+            this.label5.Size = new System.Drawing.Size(21, 23);
             this.label5.TabIndex = 12;
             this.label5.Text = "X";
             // 
@@ -91,9 +93,10 @@
             this.label4.BackColor = System.Drawing.SystemColors.InfoText;
             this.label4.Font = new System.Drawing.Font("Lucida Fax", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(-107, 530);
+            this.label4.Location = new System.Drawing.Point(-80, 431);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 17);
+            this.label4.Size = new System.Drawing.Size(52, 15);
             this.label4.TabIndex = 11;
             this.label4.Text = "LogOut";
             // 
@@ -102,6 +105,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.Datelbl);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.OrdersGv);
             this.panel1.Controls.Add(this.ItemsGV);
@@ -115,10 +119,9 @@
             this.panel1.Controls.Add(this.OrderNum);
             this.panel1.Controls.Add(this.categorycb);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(164, 48);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(123, 39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1153, 575);
+            this.panel1.Size = new System.Drawing.Size(865, 467);
             this.panel1.TabIndex = 10;
             // 
             // button5
@@ -128,10 +131,9 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Lucida Fax", 9.75F);
             this.button5.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button5.Location = new System.Drawing.Point(257, 76);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Location = new System.Drawing.Point(193, 62);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(89, 31);
+            this.button5.Size = new System.Drawing.Size(67, 25);
             this.button5.TabIndex = 24;
             this.button5.Text = "Refresh\r\n";
             this.button5.UseVisualStyleBackColor = false;
@@ -162,13 +164,12 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.OrdersGv.DefaultCellStyle = dataGridViewCellStyle3;
             this.OrdersGv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.OrdersGv.Location = new System.Drawing.Point(496, 354);
-            this.OrdersGv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OrdersGv.Location = new System.Drawing.Point(372, 288);
             this.OrdersGv.Name = "OrdersGv";
             this.OrdersGv.RowHeadersVisible = false;
             this.OrdersGv.RowHeadersWidth = 51;
             this.OrdersGv.RowTemplate.Height = 30;
-            this.OrdersGv.Size = new System.Drawing.Size(579, 188);
+            this.OrdersGv.Size = new System.Drawing.Size(434, 153);
             this.OrdersGv.TabIndex = 23;
             this.OrdersGv.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.OrdersGv.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -218,13 +219,12 @@
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ItemsGV.DefaultCellStyle = dataGridViewCellStyle6;
             this.ItemsGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ItemsGV.Location = new System.Drawing.Point(496, 62);
-            this.ItemsGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItemsGV.Location = new System.Drawing.Point(372, 61);
             this.ItemsGV.Name = "ItemsGV";
             this.ItemsGV.RowHeadersVisible = false;
             this.ItemsGV.RowHeadersWidth = 51;
             this.ItemsGV.RowTemplate.Height = 30;
-            this.ItemsGV.Size = new System.Drawing.Size(579, 188);
+            this.ItemsGV.Size = new System.Drawing.Size(434, 162);
             this.ItemsGV.TabIndex = 22;
             this.ItemsGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.ItemsGV.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -254,9 +254,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Lucida Fax", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label8.Location = new System.Drawing.Point(703, 31);
+            this.label8.Location = new System.Drawing.Point(527, 36);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(153, 26);
+            this.label8.Size = new System.Drawing.Size(126, 22);
             this.label8.TabIndex = 13;
             this.label8.Text = "Place Order";
             // 
@@ -267,10 +268,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Lucida Fax", 9.75F);
             this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button2.Location = new System.Drawing.Point(735, 546);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(551, 444);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 28);
+            this.button2.Size = new System.Drawing.Size(102, 23);
             this.button2.TabIndex = 11;
             this.button2.Text = "Place Order";
             this.button2.UseVisualStyleBackColor = false;
@@ -280,9 +280,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Fax", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label3.Location = new System.Drawing.Point(709, 324);
+            this.label3.Location = new System.Drawing.Point(532, 263);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 26);
+            this.label3.Size = new System.Drawing.Size(121, 22);
             this.label3.TabIndex = 10;
             this.label3.Text = "Your Order";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -294,10 +295,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Lucida Fax", 9.75F);
             this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Location = new System.Drawing.Point(696, 292);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(586, 229);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(191, 28);
+            this.button1.Size = new System.Drawing.Size(143, 23);
             this.button1.TabIndex = 8;
             this.button1.Text = "Add To Cart";
             this.button1.UseVisualStyleBackColor = false;
@@ -308,9 +308,10 @@
             this.LabelAmnt.AutoSize = true;
             this.LabelAmnt.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelAmnt.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.LabelAmnt.Location = new System.Drawing.Point(955, 546);
+            this.LabelAmnt.Location = new System.Drawing.Point(716, 444);
+            this.LabelAmnt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelAmnt.Name = "LabelAmnt";
-            this.LabelAmnt.Size = new System.Drawing.Size(158, 23);
+            this.LabelAmnt.Size = new System.Drawing.Size(126, 18);
             this.LabelAmnt.TabIndex = 7;
             this.LabelAmnt.Text = "OrderAmount";
             // 
@@ -320,10 +321,10 @@
             this.SellerName.Enabled = false;
             this.SellerName.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SellerName.ForeColor = System.Drawing.SystemColors.Window;
-            this.SellerName.Location = new System.Drawing.Point(59, 175);
-            this.SellerName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SellerName.Location = new System.Drawing.Point(44, 142);
+            this.SellerName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SellerName.Name = "SellerName";
-            this.SellerName.Size = new System.Drawing.Size(189, 27);
+            this.SellerName.Size = new System.Drawing.Size(143, 23);
             this.SellerName.TabIndex = 6;
             this.SellerName.Text = "Seller";
             this.SellerName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -333,10 +334,10 @@
             this.OrderNum.BackColor = System.Drawing.SystemColors.Desktop;
             this.OrderNum.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OrderNum.ForeColor = System.Drawing.SystemColors.Window;
-            this.OrderNum.Location = new System.Drawing.Point(59, 130);
-            this.OrderNum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.OrderNum.Location = new System.Drawing.Point(44, 106);
+            this.OrderNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.OrderNum.Name = "OrderNum";
-            this.OrderNum.Size = new System.Drawing.Size(189, 27);
+            this.OrderNum.Size = new System.Drawing.Size(143, 23);
             this.OrderNum.TabIndex = 5;
             this.OrderNum.Text = "OrderNum";
             // 
@@ -349,10 +350,9 @@
             this.categorycb.Items.AddRange(new object[] {
             "Fighting",
             "FPS"});
-            this.categorycb.Location = new System.Drawing.Point(59, 76);
-            this.categorycb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.categorycb.Location = new System.Drawing.Point(44, 62);
             this.categorycb.Name = "categorycb";
-            this.categorycb.Size = new System.Drawing.Size(189, 31);
+            this.categorycb.Size = new System.Drawing.Size(143, 26);
             this.categorycb.TabIndex = 3;
             this.categorycb.Text = "Genre";
             this.categorycb.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectionChangeCommitted);
@@ -362,9 +362,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Fax", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label1.Location = new System.Drawing.Point(491, 0);
+            this.label1.Location = new System.Drawing.Point(368, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 26);
+            this.label1.Size = new System.Drawing.Size(126, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "Place Order";
             // 
@@ -374,9 +375,10 @@
             this.label6.BackColor = System.Drawing.SystemColors.Desktop;
             this.label6.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label6.Location = new System.Drawing.Point(1313, 11);
+            this.label6.Location = new System.Drawing.Point(985, 9);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 29);
+            this.label6.Size = new System.Drawing.Size(21, 23);
             this.label6.TabIndex = 13;
             this.label6.Text = "X";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -387,9 +389,10 @@
             this.label7.BackColor = System.Drawing.SystemColors.InfoText;
             this.label7.Font = new System.Drawing.Font("Lucida Fax", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(47, 580);
+            this.label7.Location = new System.Drawing.Point(35, 471);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 17);
+            this.label7.Size = new System.Drawing.Size(52, 15);
             this.label7.TabIndex = 14;
             this.label7.Text = "LogOut";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -401,10 +404,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Lucida Fax", 9.75F);
             this.button3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button3.Location = new System.Drawing.Point(20, 101);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Location = new System.Drawing.Point(15, 82);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(136, 38);
+            this.button3.Size = new System.Drawing.Size(102, 31);
             this.button3.TabIndex = 13;
             this.button3.Text = "Items";
             this.button3.UseVisualStyleBackColor = false;
@@ -417,22 +419,33 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Lucida Fax", 9.75F);
             this.button4.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button4.Location = new System.Drawing.Point(20, 169);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Location = new System.Drawing.Point(15, 137);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(136, 38);
+            this.button4.Size = new System.Drawing.Size(102, 31);
             this.button4.TabIndex = 15;
             this.button4.Text = "Users";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // Datelbl
+            // 
+            this.Datelbl.AutoSize = true;
+            this.Datelbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Datelbl.ForeColor = System.Drawing.Color.White;
+            this.Datelbl.Location = new System.Drawing.Point(705, 9);
+            this.Datelbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Datelbl.Name = "Datelbl";
+            this.Datelbl.Size = new System.Drawing.Size(44, 17);
+            this.Datelbl.TabIndex = 26;
+            this.Datelbl.Text = "Date";
+            // 
             // UserOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1356, 638);
+            this.ClientSize = new System.Drawing.Size(1017, 518);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label7);
@@ -441,7 +454,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UserOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserOrder";
@@ -477,5 +489,6 @@
         private Guna.UI2.WinForms.Guna2DataGridView OrdersGv;
         private Guna.UI2.WinForms.Guna2DataGridView ItemsGV;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label Datelbl;
     }
 }

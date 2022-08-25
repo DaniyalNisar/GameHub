@@ -80,6 +80,7 @@ namespace GameHub
             table.Columns.Add("UnitPrice", typeof(int));
             table.Columns.Add("Total", typeof(int));
             OrdersGv.DataSource = table;
+            Datelbl.Text = DateTime.Now.ToString();
         }
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

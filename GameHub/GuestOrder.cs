@@ -60,7 +60,7 @@ namespace GameHub
         }
 
         private void GuestOrder_Load(object sender, EventArgs e)
-        {
+        {   timer1.Start(); 
             populate();
             table.Columns.Add("Num", typeof(int));
             table.Columns.Add("Item", typeof(string));
@@ -68,6 +68,7 @@ namespace GameHub
             table.Columns.Add("UnitPrice", typeof(int));
             table.Columns.Add("Total", typeof(int));
             OrdersGv.DataSource = table;
+         //   Datelbl.Text = DateTime.Now.ToString();
         }
 
         int num = 0;
@@ -84,6 +85,27 @@ namespace GameHub
             cat = ItemsGV.SelectedRows[0].Cells[2].Value.ToString();
             price = Convert.ToInt32(ItemsGV.SelectedRows[0].Cells[3].Value.ToString());
             flag = 1;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(OrderNumTb.Text == "")
+            {
+                MessageBox.Show("Order Number Missing");
+                return;
+            }
+            Con.Open();
+            string query = "insert into OrdersTb1 values(" + OrderNumTb.Text + ",'" + Datelbl.Text + "','" + SellerNameTb.Text + "',"+LabelAmnt.Text+")";
+            SqlCommand cmd = new SqlCommand(query, Con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Order Successfully Created");
+            Con.Close();
+            populate();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Datelbl.Text = DateTime.Now.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -105,7 +127,7 @@ namespace GameHub
                 flag = 0;
             }
             sum = sum + total;
-            LabelAmnt.Text = "PKR " + sum;
+            LabelAmnt.Text =""+sum;
         }
 
         private void categorycb_SelectionChangeCommitted(object sender, EventArgs e)
